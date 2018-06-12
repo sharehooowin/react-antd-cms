@@ -1,0 +1,13 @@
+.container{
+  height: 60%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.page{
+  margin:0 8% 0 0;
+}
+.text{
+  color: rgb(88, 76, 76);
+  font-size: 2em;
+}

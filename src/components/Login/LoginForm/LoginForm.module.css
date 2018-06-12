@@ -1,0 +1,26 @@
+.form{
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    width:20%;
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 36px;
+    width: 320px;
+    height: 340px;
+    margin: -160px 0 0 -160px;
+}
+
+.logo {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    font-size: 2em;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0 106px;
+    margin: auto;
+}

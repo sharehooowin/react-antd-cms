@@ -1,0 +1,17 @@
+.logo{
+    display:inline-block;
+}
+
+.title{
+    color:white;
+}
+
+.user{
+    display:inline-block;
+    float:right;
+    padding:0 8% 0 0;
+}
+
+.username{
+    color:white;
+}

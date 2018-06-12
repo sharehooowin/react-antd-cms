@@ -1,0 +1,19 @@
+.logo{
+    background-color: #002140;
+    height:4rem;
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.img{
+    height:50%;
+}
+
+.title{
+    color:white;
+    align-items: center;
+    margin:0;
+}
+
