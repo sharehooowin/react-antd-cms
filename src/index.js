@@ -7,6 +7,7 @@ import {
     Route,
     Redirect
 } from 'react-router-dom';
+import styles from './index.module.css';
 import {routes} from './route.js';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 
@@ -19,7 +20,7 @@ let renderRoute = (item,index)=>{
 };
 
 ReactDOM.render(
-    <div>
+    <div className={styles.container}>
         <Router>
             <Switch>
                 {routes.map(renderRoute)}

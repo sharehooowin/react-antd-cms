@@ -23,7 +23,7 @@ export default class PageNotFound extends Component {
             );
         };
         return (
-            <Layout style={{ height:  window.innerHeight }}>
+            <Layout className={styles.container}>
 
                     <Sider className={styles.sider}
                            collapsible theme="light">
