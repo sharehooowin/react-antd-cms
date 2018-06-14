@@ -27,7 +27,7 @@ export default class PageNotFound extends Component {
 
                     <Sider className={styles.sider}
                            collapsible theme="light">
-                        <MenuLayout/>
+                        <MenuLayout {...this.props}/>
                     </Sider>
 
                     <Layout className={styles.contentLayout}>

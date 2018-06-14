@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import styles from './MenuLayout.module.css';
 import { Menu, Icon, Button } from 'antd';
-import config from './config.js';
+import config from '../config.js';
 import {
     Link
 } from 'react-router-dom';
@@ -18,18 +18,34 @@ export default class MenuLayout extends Component{
         }
     }
 
+    componentDidMount(){
+        this.getMenu();
+    }
+
+    getMenu = () => {
+        let openKey = window.localStorage.getItem('openKey')||'';
+        let selectedKey = window.localStorage.getItem('selectedKey')||'';
+        this.setState({
+            openKey,
+            selectedKey
+        });
+        if(window.localStorage.getItem('selectedKey')!=-1){
+            this.props.history.push(window.localStorage.getItem('selectedKey'));
+        }
+    };
+
     onOpenChange = (openKeys) => {
+        window.localStorage.setItem('openKey',openKeys[1]);
         this.setState({
             openKey:openKeys[1]
         });
     };
 
     onSelect = (item) => {
-        console.log(item);
+        window.localStorage.setItem('selectedKey',item.key);
         this.setState({
             selectedKey:item.key,
         });
-        console.log(this.state.selectedKey);
     };
 
     render(){
@@ -39,7 +55,7 @@ export default class MenuLayout extends Component{
                     <SubMenu key={"submenu"+index}
                              title={
                                  <span>
-                                     <Icon type="mail" /><span>{item.title}</span>
+                                     <Icon type={item.icon} /><span>{item.title}</span>
                                  </span>
                              }
                     >

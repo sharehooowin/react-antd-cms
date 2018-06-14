@@ -11,9 +11,11 @@
 }
 .contentLayout{
     height:100%;
+    display: flex;
 }
 
 .content{
-    height:100%;
-    backgroundColor:'white'
+    /*height:100%;*/
+    backgroundColor:'white';
+    flex:1;
 }

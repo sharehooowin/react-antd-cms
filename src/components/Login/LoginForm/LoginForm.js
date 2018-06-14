@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import styles from './LoginForm.module.css';
-import {Form,Input,Row,Button} from 'antd';
+import {Form,Input,Row,Button,message} from 'antd';
 const FormItem = Form.Item;
 
 class LoginForm extends Component{
@@ -12,6 +12,7 @@ class LoginForm extends Component{
     }
 
     login = async () => {
+        message.success('登录成功');
         this.props.history.push("/");
     }
 

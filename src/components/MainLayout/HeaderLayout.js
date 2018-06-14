@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import styles from './HeaderLayout.module.css';
-import { Menu, Dropdown, Icon } from 'antd';
+import { Menu, Dropdown, Icon, message} from 'antd';
 const MenuItem = Menu.Item;
 
 export default class HeaderLayout extends Component{
@@ -15,6 +15,7 @@ export default class HeaderLayout extends Component{
     }
 
     logout = async () => {
+        message.success('注销成功');
         this.props.history.push('/login');
     }
 

@@ -8,11 +8,11 @@ export default class index extends Component {
 
     render() {
         return (
-            <div>
+            <div className={styles.container}>
                 <div className={styles.bg}>
 
                 </div>
-                <div className={styles.container}>
+                <div className={styles.form}>
 
                     <LoginForm {...this.props}/>
                 </div>
