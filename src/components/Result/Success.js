@@ -1,12 +1,15 @@
 import React,{Component} from 'react';
 import styles from './Success.module.css';
-import {Icon, Timeline ,} from 'antd';
+import {Icon, Timeline ,Steps, } from 'antd';
+const Step = Steps.Step;
 
 export default class Success extends Component{
     constructor(props){
         super(props);
-        this.state = {};
-    }
+        this.state = {
+            value:'default value'
+        };
+    };
 
     render(){
         return(

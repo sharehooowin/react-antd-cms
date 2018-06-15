@@ -6,6 +6,17 @@ export default  {
             url:'/'
         },
         {
+            title:'表单',
+            icon:'close-circle-o',
+            children:[
+                {
+                    title:'基础表单',
+                    icon:'tag',
+                    url:'/form/basic-form',
+                },
+            ]
+        },
+        {
             title:'登录页',
             icon:'login',
             children:[
@@ -21,12 +32,12 @@ export default  {
             icon:'check-circle',
             children:[
                 {
-                    title:'404',
+                    title:'成功页',
                     icon:'tag',
                     url:'/result/success',
                 },
                 {
-                    title:'500',
+                    title:'失败页',
                     icon:'tag',
                     url:'/result/fail',
                 }

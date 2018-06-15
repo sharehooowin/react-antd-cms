@@ -3,6 +3,7 @@ import Page500 from './Page500/Page500';
 import Login from './Login/Login';
 import Fail from './Result/Fail';
 import Success from './Result/Success';
+import BasicFrom from './Form/Normal/Index';
 export const routes =  [
     {
         url:'/page/404',
@@ -23,5 +24,9 @@ export const routes =  [
     {
         url:'/result/fail',
         component:Fail,
+    },
+    {
+        url:'/form/basic-form',
+        component:BasicFrom
     }
 ];

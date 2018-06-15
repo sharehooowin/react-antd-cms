@@ -17,9 +17,9 @@ export default class Fail extends Component{
                         <h1>操作失败</h1>
                         <h3>请认真核实信息</h3>
                     </div>
+                    <h3>您操作的内容有如下错误：</h3>
                 </div>
                 <div className={styles.details}>
-                    <h3>您操作的内容有如下错误：</h3>
                     <div>
                         <Icon style={{color:'red'}} type="close-circle-o" />
                         <span>您的账户已被冻结</span>
