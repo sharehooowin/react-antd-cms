@@ -19,7 +19,7 @@ class LoginForm extends Component{
     render(){
         const { getFieldDecorator } = this.props.form;
         return(
-            <div className={styles.form}>
+            <div className={styles.container}>
                 <div className={styles.logo}>
                     {this.state.HeaderName}
                 </div>
@@ -39,15 +39,17 @@ class LoginForm extends Component{
                             <Input size="large" type="password" placeholder="密码"/>
                         )}
                     </FormItem>
-                </Form>
-                <Row>
-                    <Button type="primary" size="large" onClick={()=>{this.login()}} className={styles.btn}>
-                        登陆
-                    </Button>
-                    <p>
+                    <FormItem>
+                        <Row>
+                            <Button type="primary" size="large" onClick={()=>{this.login()}} className={styles.btn}>
+                                登陆
+                            </Button>
+                            <p>
 
-                    </p>
-                </Row>
+                            </p>
+                        </Row>
+                    </FormItem>
+                </Form>
             </div>
         )
     }

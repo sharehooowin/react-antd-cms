@@ -1,13 +1,24 @@
-.form{
-    position: absolute;
-    top: 300px;
-    left: 400px;
-    width:20%;
+.container{
     background-color: rgba(255, 255, 255, 0.92);
-    padding: 36px;
-    width: 320px;
-    height: 340px;
-    margin: -160px 0 0 -160px;
+    padding:36px;
+}
+
+/*宽度大于1024px*/
+@media screen and (min-width:1024px){
+    .container{
+        position:relative;
+        top: 200px;
+        left: 300px;
+        width: 320px;
+        height: 340px;
+    }
+}
+
+/*宽度小于1024px*/
+@media screen and (max-width:1024px){
+    .container{
+        width:80%;
+    }
 }
 
 .logo {
@@ -20,7 +31,7 @@
 }
 
 .btn{
+    width:100%;
     display: inline-block;
-    padding: 0 106px;
     margin: auto;
 }

@@ -9,7 +9,8 @@ import {
 } from 'react-router-dom';
 import styles from './index.module.css';
 import {routes} from './route.js';
-import PageNotFound from './components/PageNotFound/PageNotFound';
+// import PageNotFound from './components/PageNotFound/PageNotFound';
+import Redirect404 from './components/Redirect404/Redirect404';
 
 let renderRoute = (item,index)=>{
 
@@ -24,7 +25,7 @@ ReactDOM.render(
         <Router>
             <Switch>
                 {routes.map(renderRoute)}
-                <Route component={PageNotFound}/>
+                <Route component={Redirect404}/>
             </Switch>
         </Router>
     </div>

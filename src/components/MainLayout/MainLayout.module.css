@@ -1,21 +1,32 @@
 .container{
     height:100%;
 }
+
 .header{
     background-color: #222d3f;
     z-index: 1;
 }
+
 .sider{
     height:100%;
     background-color: #002140;
 }
+
 .contentLayout{
     height:100%;
     display: flex;
 }
 
 .content{
-    /*height:100%;*/
     backgroundColor:'white';
     flex:1;
+}
+
+@media screen and (max-width:720px){
+    /*.sider{*/
+        /*display: none;*/
+    /*}*/
+    div h1{
+        font-size:16px;
+    }
 }

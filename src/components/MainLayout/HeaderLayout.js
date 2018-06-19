@@ -32,7 +32,7 @@ export default class HeaderLayout extends Component{
             )
         };
         return(
-            <div>
+            <div className={styles.container}>
                 <div className={styles.logo}>
                     <h1 className={styles.title}>
                         {this.state.logo}

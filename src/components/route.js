@@ -28,5 +28,9 @@ export const routes =  [
     {
         url:'/form/basic-form',
         component:BasicFrom
-    }
+    },
+    {
+        url:'/',
+        component:null
+    },
 ];

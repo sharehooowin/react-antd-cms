@@ -29,9 +29,9 @@ export default class MenuLayout extends Component{
             openKey,
             selectedKey
         });
-        if(window.localStorage.getItem('selectedKey')!=-1){
-            this.props.history.push(window.localStorage.getItem('selectedKey'));
-        }
+        // if(window.localStorage.getItem('selectedKey')!=-1){
+        //     this.props.history.push(window.localStorage.getItem('selectedKey'));
+        // }
     };
 
     onOpenChange = (openKeys) => {
