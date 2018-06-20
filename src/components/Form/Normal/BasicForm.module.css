@@ -1,4 +1,23 @@
 .container{
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*!*justify-content: center;*!*/
+    /*align-items: center;*/
+}
+
+.form{
+    width:100%;
+}
+
+.formItem{
+    width:100%;
+    margin:1em 0 0 1em;
+}
+
+.formItem span{
+    margin:0;
+}
+
+.btn{
+    margin:0.5em;
 }
