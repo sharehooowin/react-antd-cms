@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import FastTable from './FastTable/DataTable';
 import {columns} from "./config";
 import Header from "./Header";
+import styles from './Index.module.css';
 
 export default class Table extends Component{
     constructor(props){
@@ -13,7 +14,7 @@ export default class Table extends Component{
 
     render(){
       return(
-        <div>
+        <div className={styles.container}>
             <Header title="基础表格" message="FastTable组件，可快速实现创建，编辑，查看和删除操作。其他功能：分页"/>
             <FastTable
                 bordered={true}
@@ -21,6 +22,7 @@ export default class Table extends Component{
                 pageSize={10}
                 operation={['create','edit','delete','show']}
                 columns={columns}
+                select={true}
             />
         </div>
       );

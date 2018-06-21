@@ -190,6 +190,7 @@ export default class DataTable extends Component {
                     rowKey={record => record[this.state.primary]}
                     pagination={false}
                     loading={this.state.loading}
+                    rowSelection={[]}
                 />
 
                 <Pagination

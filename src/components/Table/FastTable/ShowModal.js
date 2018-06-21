@@ -31,7 +31,7 @@ export default class ShowModal extends Component {
             }
             return(
                 <div key={index}>
-                    <h3>{typeof options.title !== 'undefined'?options.title:options.showTitle} : {value}</h3>
+                    <h3>{typeof options.showTitle !== 'undefined'?options.showTitle:options.title} : {value}</h3>
                 </div>
             )
         };
