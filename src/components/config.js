@@ -6,6 +6,17 @@ export default  {
             url:'/'
         },
         {
+            title:'表格',
+            icon:'table',
+            children:[
+                {
+                    title:'普通表格',
+                    icon:"table",
+                    url:"/table/normal"
+                }
+            ]
+        },
+        {
             title:'表单',
             icon:'close-circle-o',
             children:[

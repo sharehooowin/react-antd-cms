@@ -15,7 +15,6 @@ const {Header, Content, Sider,Footer} = Layout;
 export default class PageNotFound extends Component {
     constructor(props) {
         super(props);
-        console.log(this.props.isMobile);
     }
     render() {
         let renderRoute = (item,index) => {

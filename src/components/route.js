@@ -4,6 +4,7 @@ import Login from './Login/Login';
 import Fail from './Result/Fail';
 import Success from './Result/Success';
 import BasicFrom from './Form/Normal/Index';
+import NormalTable from './Table/Index';
 export const routes =  [
     {
         url:'/page/404',
@@ -28,6 +29,10 @@ export const routes =  [
     {
         url:'/form/basic-form',
         component:BasicFrom
+    },
+    {
+      url:'/table/normal',
+      component:NormalTable
     },
     {
         url:'/',
