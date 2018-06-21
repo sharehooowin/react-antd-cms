@@ -22,7 +22,6 @@ export default class Table extends Component{
                 pageSize={10}
                 operation={['create','edit','delete','show']}
                 columns={columns}
-                select={true}
             />
         </div>
       );
