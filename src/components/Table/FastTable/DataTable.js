@@ -22,7 +22,8 @@ export default class DataTable extends Component {
             current: 1,
             total: 1,
             dataSource: [],
-            primary: primary
+            primary: primary,
+            selectedRowKeys:[],
         }
     }
 
@@ -96,6 +97,13 @@ export default class DataTable extends Component {
             message.error("数据删除失败")
         }
     }
+
+    onSelectChange= (selectedRowKeys)=>{
+        console.log(selectedRowKeys);
+        this.setState({
+            selectedRowKeys
+        });
+    };
 
     render() {
         let key = 0;
@@ -190,7 +198,10 @@ export default class DataTable extends Component {
                     rowKey={record => record[this.state.primary]}
                     pagination={false}
                     loading={this.state.loading}
-                    rowSelection={[]}
+                    rowSelection={{
+                        selectedRowKeys:this.state.selectedRowKeys,
+                        onChange:this.onSelectChange
+                    }}
                 />
 
                 <Pagination
